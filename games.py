@@ -56,7 +56,8 @@ def chohan(bet):
 	dice2 = random.randint(1, 6)
 	dice = dice1 + dice2
 	result = dice % 2
-	print("The dice total {} - it is ... {}".format(dice, sides[result]))
+	print("The dice read {} and {} for a total of {} - it is ... {}".\
+		format(dice1, dice2, dice, sides[result]))
 	if guess == result:
 		print("You won {} money!".format(bet))
 		outcome = bet
